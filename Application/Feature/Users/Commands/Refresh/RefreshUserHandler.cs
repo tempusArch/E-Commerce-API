@@ -32,8 +32,8 @@ public class RefreshUserHandler : IRequestHandler<RefreshUserCommand, string> {
 
         var newRefreshToken = _jwtService.Generate_RefreshToken(kyuuRefreshToken.UserId);
 
-        var um = await _context.UserTable.
-            SingleOrDefaultAsync(
+        var um = await _context.UserTable
+            .SingleOrDefaultAsync(
                 n => n.Id == int.Parse(kyuuRefreshToken.UserId)
             );
         var newAccessToken = _jwtService.Generate_JWT(um);

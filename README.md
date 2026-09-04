@@ -1,4 +1,26 @@
 # E-Commerce_API
-Backend Roadmap Project - API<br>
-https://roadmap.sh/projects/ecommerce-api<br><br>
-Clean Architecture, CQRS, MediatR, PipelineBehavior (FluentValidation, Logging, Transaction), ExceptionHandler, Stripe, JWT, SQL Server, Pagination
+
+## Tech Stack
+- C#
+- .NET 8
+- ASP.NET Core
+- EF Core
+- SQL Server
+- AutoMapper
+- MediatR
+- FluentValidation
+- Stripe API
+
+## Architecture
+Clean Architecture + CQRS
+
+## Features
+- JWT User Authentication and Role-based Authorization
+- Admin management for Category, Product
+- Shopping service (Product, Cart, Order)
+- Payment Integration with Stripe
+- MediatR Pipeline Behavior (FluentValidation, Logging, Transaction)
+- Global ExceptionHandler
+
+## Follow-up Project
+https://roadmap.sh/projects/ecommerce-api

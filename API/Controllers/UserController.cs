@@ -68,4 +68,11 @@ public class UserController : ControllerBase {
         return Ok(await _mediator.Send(new GetAllUsersQuery(page, limit)));
     }
     
+    [Authorize(Roles = "Admin")]
+    [HttpPut("Role")]
+    public async Task<ActionResult<UserListResponse>> ChangeUserRole(ChangeUserRoleDto dto) {
+        var userId = _httpContextService.GetCurrentUserId();
+
+        return Ok(await _mediator.Send(new ChangeUserRoleCommand(userId, dto)));
+    }
 }
