@@ -1,4 +1,4 @@
-# E-Commerce_API
+# E-Commerce-API
 
 ## Tech Stack
 - C#
