@@ -19,7 +19,7 @@ Clean Architecture + CQRS
 - Admin management for Category, Product
 - Shopping service (Product, Cart, Order)
 - Payment Integration with Stripe
-- MediatR Pipeline Behavior (FluentValidation, Logging, Transaction)
+- MediatR Pipeline Behavior (Logging, FluentValidation, Transaction)
 - Global ExceptionHandler
 
 ## Follow-up Project
